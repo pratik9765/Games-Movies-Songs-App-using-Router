@@ -1,5 +1,4 @@
 import React from 'react'
-import Songcard from './SongCard'
 import SongCard from './SongCard';
 
 const Songs = (props) => {
