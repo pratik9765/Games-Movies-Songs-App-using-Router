@@ -2,28 +2,28 @@ import './App.css';
 import NotFound from './components/NotFound';
 import './index.css';
 import { NavLink, Route, Routes} from 'react-router-dom';
+import GamesData from './GamesData'
+import SongsData from './SongsData'
+import MoviesData from './MoviesData'
 import Games from './components/Games'
-import Songs from './components/Songs'
 import Movies from './components/Movies'
-import GamesData from './data'
-import SongsData from './data'
-import MoviesData from './data'
+import Songs from './components/Songs'
 
 function App() {
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full bg-sky-400'>
 
-      <nav>
+      <nav className='p-4 items-center bg-black text-white'>
         <ul className='flex flex-row justify-center gap-10 mx-auto'>
-          <li>
+          <li className='hover:text-lg hover:font-semibold transition-all duration-200'>
             <NavLink to="/">Games</NavLink>
           </li>
 
-          <li>
+          <li className='hover:text-lg hover:font-semibold transition-all duration-200'>
             <NavLink to="/Movies">Movies</NavLink>
           </li>
 
-          <li>
+          <li className='hover:text-lg hover:font-semibold transition-all duration-200'>
             <NavLink to="/Songs">Songs</NavLink>
           </li>
 
